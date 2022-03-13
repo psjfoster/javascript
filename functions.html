@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Page Title</title>
+  <meta charset="UTF-8">
+</head>
+<body>
+  <script>
+    // Your JavaScript goes here!
+    console.log("Hello, World!")
+
+    function add7(n=0) {
+      return n + 7;
+    }
+
+    function multiply(x=0, y=0) {
+      return x * y;
+    }
+
+    function capitalize(text="a") {
+      text = text.toLowerCase();
+      let makeFirstCharUpperCase = text.charAt(0).toUpperCase();
+      return makeFirstCharUpperCase + text.substr(1);
+    }
+
+    function lastLetter(text="lastLetter") {
+      return text.charAt(text.length - 1);
+    }
+
+    console.log(add7())
+    console.log(add7(7))
+    console.log(add7(2))
+
+    console.log(multiply())
+    console.log(multiply(2,3))
+    console.log(multiply(4 + 2/9,7))
+
+    console.log(capitalize())
+    console.log(capitalize("IWISHyouwereHERE!"))
+    console.log(capitalize("tRyMeIfYoUdArE"))
+
+    console.log(lastLetter("I"))
+    console.log(lastLetter("wish"))
+    console.log(lastLetter("you"))
+    console.log(lastLetter("were"))
+    console.log(lastLetter("here"))
+  </script>
+</body>
+</html>
